@@ -57,7 +57,7 @@ object bitcoscala_2024 {
     connectionProperties.put("password", "WelcomeItc@2022")
 
     withCumulativeVolume.write
-      .jdbc(jdbcUrl, "bitcoinscal_2025", connectionProperties)
+      .jdbc(jdbcUrl, "bitcoinsca_2025", connectionProperties)
 
     // Stop Spark Session
     spark.stop()
