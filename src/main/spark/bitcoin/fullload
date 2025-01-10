@@ -1,10 +1,10 @@
 
+ssh -i "test_key.pem" ec2-user@18.134.132.202
 
+sqoop import --connect jdbc:postgresql://18.132.73.146:5432/testdb --username consultants --password WelcomeItc@2022 --table bitcoinsca_2025 --m 1 --target-dir /tmp/bigdata_nov_2024/project2024/scalaozie
 
-sqoop import --connect jdbc:postgresql://18.132.73.146:5432/testdb --username consultants --password WelcomeItc@2022 --table bitcoinscala2_2025 --m 1 --target-dir /tmp/bigdata_nov_2024/project2024/scala
-
-/tmp/bigdata_nov_2024/project2024/scala   ---------path
-CREATE EXTERNAL TABLE project2024.bitconscala_2025 (
+/tmp/bigdata_nov_2024/project2024/scalaozie   ---------path
+CREATE EXTERNAL TABLE project2024.bitcoin_scala_2025 (
     `Timestamp` string,
     Open FLOAT,
     High FLOAT,
@@ -23,4 +23,4 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/tmp/bigdata_nov_2024/project2024/scala';
+LOCATION '/tmp/bigdata_nov_2024/project2024/scalaozie ';
