@@ -17,7 +17,7 @@ object IncrementalLoad {
     println(s"Max Cumulative_Volume: $lastCumulativeVolume")
 
     // Step 3: Build the query to get data from PostgreSQL
-    val query = s"""SELECT * FROM bitcoin_2025 WHERE "Cumulative_Volume" > $lastCumulativeVolume"""
+    val query = s"""SELECT * FROM bitcoinsca_2025 WHERE "Cumulative_Volume" > $lastCumulativeVolume"""
 
     // Step 4: Read data from PostgreSQL using the query
     val newData: DataFrame = spark.read
